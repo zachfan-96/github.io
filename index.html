@@ -4,46 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zachary Lu-Ming Fan — UI / UX Designer</title>
+<meta name="description" content="Portfolio of Zachary Lu-Ming Fan, a UI/UX designer based in Vancouver & Hong Kong — featuring government service design, enterprise design systems, and mobile product design work.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zachary Lu-Ming Fan — UI / UX Designer">
+<meta property="og:description" content="Portfolio of Zachary Lu-Ming Fan, a UI/UX designer based in Vancouver & Hong Kong — featuring government service design, enterprise design systems, and mobile product design work.">
+<meta property="og:url" content="https://zachfan-96.github.io/">
+<meta property="og:image" content="https://zachfan-96.github.io/me.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zachary Lu-Ming Fan — UI / UX Designer">
+<meta name="twitter:description" content="Portfolio of Zachary Lu-Ming Fan, a UI/UX designer based in Vancouver & Hong Kong.">
+<meta name="twitter:image" content="https://zachfan-96.github.io/me.png">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --ink: #111110;
-  --ink-60: #666662;
-  --ink-30: #b0b0aa;
-  --ink-10: #e8e8e4;
-  --paper: #fafaf8;
-  --paper-2: #f2f2ee;
-}
-html { scroll-behavior: smooth; }
-body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
-
-/* NAV */
-nav {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 1.25rem 3rem; background: var(--paper);
-  border-bottom: 0.5px solid var(--ink-10); position: sticky; top: 0; z-index: 100;
-}
-.nav-name {
-  font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 500;
-  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); text-decoration: none;
-}
-.nav-right { display: flex; align-items: center; gap: 2rem; }
-.nav-link {
-  font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-60);
-  text-decoration: none; transition: color 0.2s;
-}
-.nav-link:hover { color: var(--ink); }
-.nav-cta {
-  font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 500;
-  letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem 1.25rem;
-  border: 0.5px solid var(--ink); border-radius: 2rem; color: var(--ink);
-  text-decoration: none; transition: background 0.2s, color 0.2s;
-}
-.nav-cta:hover { background: var(--ink); color: var(--paper); }
-
 /* HERO */
 .hero { background: var(--ink); padding: 5rem 3rem; }
 .hero-inner {
@@ -93,12 +68,6 @@ nav {
 
 /* WORK */
 .work { max-width: 1040px; margin: 0 auto; padding: 5rem 3rem; }
-.section-eyebrow {
-  font-family: 'Outfit', sans-serif; font-size: 10px; font-weight: 400;
-  letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-30);
-  margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.75rem;
-}
-.section-eyebrow::before { content: ''; display: block; width: 20px; height: 0.5px; background: var(--ink-30); }
 .section-title {
   font-family: 'Outfit', sans-serif; font-size: 1.9rem; font-weight: 300;
   letter-spacing: -0.025em; color: var(--ink); margin-bottom: 3rem; line-height: 1.2;
@@ -175,7 +144,6 @@ footer {
 }
 .footer-links a:hover { color: var(--ink); }
 
-@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 .hero-eyebrow { animation: fadeUp 0.5s ease both; }
 .hero-h1      { animation: fadeUp 0.5s 0.07s ease both; }
 .hero-body    { animation: fadeUp 0.5s 0.14s ease both; }
@@ -184,7 +152,6 @@ footer {
 .hero-right   { animation: fadeUp 0.6s 0.12s ease both; }
 
 @media (max-width: 768px) {
-  nav { padding: 1rem 1.5rem; }
   .hero { padding: 3rem 1.5rem; }
   .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-right { display: none; }
@@ -201,11 +168,11 @@ footer {
 <body>
 
 <nav>
-  <a class="nav-name" href="#">Zachary Lu-Ming Fan</a>
+  <a class="nav-name" href="index.html">Zachary Lu-Ming Fan</a>
   <div class="nav-right">
     <a class="nav-link" href="#work">Work</a>
     <a class="nav-link" href="#about">About</a>
-    <a class="nav-link" href="zachary_fan_resume_v5.pdf" target="_blank">Resume</a>
+    <a class="nav-link" href="zachary_fan_resume_v5.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     <a class="nav-cta" href="mailto:zac0923@hotmail.com">Get in touch</a>
   </div>
 </nav>
@@ -227,18 +194,17 @@ footer {
         </div>
       </div>
       <div class="hero-tags">
-        <span class="tag">UI Design</span>
+        <span class="tag">Product Design</span>
         <span class="tag">Interaction Design</span>
-        <span class="tag">UX Design</span>
-        <span class="tag">UX Research</span>
-        <span class="tag">Prototyping</span>
+        <span class="tag">UX/UI</span>
+        <span class="tag">Research</span>
         <span class="tag">Figma</span>
-        <span class="tag">ProtoPie</span>
+        <span class="tag">Claude Code</span>
       </div>
     </div>
     <div class="hero-right">
       <div class="photo-wrap">
-        <img src="me.png" alt="Zachary Lu-Ming Fan">
+        <img src="me.png" width="1086" height="1448" alt="Zachary Lu-Ming Fan">
       </div>
       <div class="hero-location">Vancouver, BC, Canada<br>Hong Kong SAR, China</div>
     </div>
@@ -264,7 +230,7 @@ footer {
         </div>
       </div>
       <div class="proj-right">
-        <img class="proj-img" src="portfolio cov.png" alt="City of Vancouver project">
+        <img loading="lazy" class="proj-img" src="portfolio-cov.png" width="1446" height="876" alt="City of Vancouver project">
         <div class="proj-meta"><span class="proj-year">2026</span><span class="proj-arrow">→</span></div>
       </div>
     </a>
@@ -283,7 +249,7 @@ footer {
         </div>
       </div>
       <div class="proj-right">
-        <img class="proj-img" src="portfolio ctr.png" alt="CTR Hong Kong project">
+        <img loading="lazy" class="proj-img" src="portfolio-ctr.png" width="1446" height="876" alt="CTR Hong Kong project">
         <div class="proj-meta"><span class="proj-year">2025</span><span class="proj-arrow">→</span></div>
       </div>
     </a>
@@ -302,7 +268,7 @@ footer {
         </div>
       </div>
       <div class="proj-right">
-        <img class="proj-img" src="portfolio homescope.png" alt="HomeScope project">
+        <img loading="lazy" class="proj-img" src="portfolio-homescope.png" width="2623" height="1216" alt="HomeScope project">
         <div class="proj-meta"><span class="proj-year">2024</span><span class="proj-arrow">→</span></div>
       </div>
     </a>
@@ -341,9 +307,9 @@ footer {
 <footer>
   <span class="footer-name">Zachary Lu-Ming Fan</span>
   <ul class="footer-links">
-    <li><a href="https://linkedin.com/in/zachlumingfan" target="_blank">LinkedIn</a></li>
-    <li><a href="https://www.instagram.com/zlm.fan/" target="_blank">Instagram</a></li>
-    <li><a href="zachary_fan_resume_v5.pdf" target="_blank">Resume</a></li>
+    <li><a href="https://linkedin.com/in/zachlumingfan" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/zlm.fan/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a href="zachary_fan_resume_v5.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
   </ul>
 </footer>
 
