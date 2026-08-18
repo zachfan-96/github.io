@@ -130,6 +130,31 @@ nav {
 }
 .next-project:hover .next-title { opacity: 0.6; }
 
+/* ===== Lightbox (click-to-enlarge content images) ===== */
+.lightbox-link { display: block; cursor: zoom-in; }
+.lightbox {
+  display: none;
+  position: fixed; inset: 0; z-index: 1000;
+  align-items: center; justify-content: center;
+  padding: 3rem;
+}
+.lightbox:target { display: flex; }
+.lightbox-backdrop { position: absolute; inset: 0; background: rgba(17,17,16,0.92); cursor: zoom-out; }
+.lightbox img {
+  position: relative; max-width: 100%; max-height: 100%;
+  object-fit: contain; border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.lightbox-close {
+  position: fixed; top: 1.5rem; right: 2rem; z-index: 1001;
+  width: 2.75rem; height: 2.75rem;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--paper); font-family: 'Outfit', sans-serif; font-size: 1.75rem;
+  font-weight: 300; line-height: 1; text-decoration: none; cursor: zoom-out;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 0.65; }
+
 /* ===== Shared animation ===== */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 .case-hero-inner { animation: fadeUp 0.5s ease both; }
@@ -141,4 +166,6 @@ nav {
   .case-meta-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .case-content { padding: 3rem 1.5rem; }
   .case-bottom-nav { padding: 2rem 1.5rem; flex-direction: column; gap: 1.5rem; align-items: flex-start; }
+  .lightbox { padding: 1.25rem; }
+  .lightbox-close { top: 1rem; right: 1rem; width: 2.25rem; height: 2.25rem; font-size: 1.5rem; }
 }
