@@ -26,6 +26,7 @@ nav {
   font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 400;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-60);
   text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.2s;
+  padding: 0.75rem 0;
 }
 .nav-back:hover { color: var(--ink); }
 .nav-right { display: flex; align-items: center; gap: 2rem; }
@@ -33,6 +34,7 @@ nav {
   font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 400;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-60);
   text-decoration: none; transition: color 0.2s;
+  display: inline-block; padding: 0.75rem 0;
 }
 .nav-link:hover { color: var(--ink); }
 .nav-cta {
@@ -117,6 +119,7 @@ nav {
   font-family: 'Outfit', sans-serif; font-size: 11px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ink-60); text-decoration: none;
   display: flex; align-items: center; gap: 0.5rem; transition: color 0.2s;
+  padding: 0.75rem 0;
 }
 .back-link:hover { color: var(--ink); }
 .next-project { display: flex; flex-direction: column; align-items: flex-end; gap: 0.25rem; text-decoration: none; }
@@ -168,4 +171,5 @@ nav {
   .case-bottom-nav { padding: 2rem 1.5rem; flex-direction: column; gap: 1.5rem; align-items: flex-start; }
   .lightbox { padding: 1.25rem; }
   .lightbox-close { top: 1rem; right: 1rem; width: 2.25rem; height: 2.25rem; font-size: 1.5rem; }
+  .next-project { align-items: flex-start; }
 }

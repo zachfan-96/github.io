@@ -55,7 +55,7 @@
   border: 0.5px solid var(--ink-10); border-radius: 4px; overflow: hidden;
   background: var(--paper-2);
 }
-.component-card img { width: 100%; display: block; }
+.component-card img { width: 100%; display: block; cursor: zoom-in; }
 .component-card-label {
   padding: 0.6rem 0.85rem;
   font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.14em;
@@ -68,7 +68,7 @@
   border: 0.5px solid var(--ink-10); border-radius: 4px; overflow: hidden;
   background: var(--paper-2);
 }
-.component-card-wide img { width: 100%; display: block; }
+.component-card-wide img { width: 100%; display: block; cursor: zoom-in; }
 .component-card-wide .component-card-label {
   padding: 0.6rem 0.85rem;
   font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.14em;
@@ -95,6 +95,7 @@
 }
 
 @media (max-width: 768px) {
+  .case-hero-img { padding: 0 1.5rem; }
   .overview-grid { grid-template-columns: 1fr; }
   .component-grid { grid-template-columns: 1fr; }
   .stat-row { flex-direction: column; }
