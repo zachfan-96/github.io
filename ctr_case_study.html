@@ -55,7 +55,7 @@
   border: 0.5px solid var(--ink-10); border-radius: 4px; overflow: hidden;
   background: var(--paper-2);
 }
-.component-card img { width: 100%; display: block; }
+.component-card img { width: 100%; display: block; cursor: zoom-in; }
 .component-card-label {
   padding: 0.6rem 0.85rem;
   font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.14em;
@@ -68,7 +68,7 @@
   border: 0.5px solid var(--ink-10); border-radius: 4px; overflow: hidden;
   background: var(--paper-2);
 }
-.component-card-wide img { width: 100%; display: block; }
+.component-card-wide img { width: 100%; display: block; cursor: zoom-in; }
 .component-card-wide .component-card-label {
   padding: 0.6rem 0.85rem;
   font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.14em;
@@ -95,6 +95,7 @@
 }
 
 @media (max-width: 768px) {
+  .case-hero-img { padding: 0 1.5rem; }
   .overview-grid { grid-template-columns: 1fr; }
   .component-grid { grid-template-columns: 1fr; }
   .stat-row { flex-direction: column; }
@@ -213,37 +214,51 @@
     <div class="component-grid" style="margin-top:2rem;">
 
       <div class="component-card-wide">
-        <img loading="lazy" src="ctr-closeup-button-and-header-components.png" width="915" height="894" alt="Buttons, Icons and Page Headers">
+        <a href="ctr-closeup-button-and-header-components.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-button-and-header-components.png" width="915" height="894" alt="Buttons, Icons and Page Headers">
+        </a>
         <div class="component-card-label">Buttons / Icons · Page &amp; Site Headers · Responsive Header variants</div>
       </div>
 
       <div class="component-card">
-        <img loading="lazy" src="ctr-closeup-table-components-1.png" width="1197" height="879" alt="Table Components">
+        <a href="ctr-closeup-table-components-1.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-table-components-1.png" width="1197" height="879" alt="Table Components">
+        </a>
         <div class="component-card-label">Tables · Pagination · Steppers · Record Cards · User Management</div>
       </div>
 
       <div class="component-card">
-        <img loading="lazy" src="ctr-closeup-filter-components.png" width="1321" height="430" alt="Filter and Input Components">
+        <a href="ctr-closeup-filter-components.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-filter-components.png" width="1321" height="430" alt="Filter and Input Components">
+        </a>
         <div class="component-card-label">Input Fields · Date Pickers · Filter Items · Autocomplete · Dropdowns · Checkboxes</div>
       </div>
 
       <div class="component-card">
-        <img loading="lazy" src="ctr-closeup-transaction-components.png" width="1256" height="838" alt="Transaction Components">
+        <a href="ctr-closeup-transaction-components.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-transaction-components.png" width="1256" height="838" alt="Transaction Components">
+        </a>
         <div class="component-card-label">Transaction Draft Headers · Breadcrumbs · Header Messages &amp; Warnings</div>
       </div>
 
       <div class="component-card">
-        <img loading="lazy" src="ctr-closeup-inline-message-component.png" width="355" height="434" alt="Inline Message Components">
+        <a href="ctr-closeup-inline-message-component.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-inline-message-component.png" width="355" height="434" alt="Inline Message Components">
+        </a>
         <div class="component-card-label">Inline Messages — Info, Success, Warning &amp; Error states</div>
       </div>
 
       <div class="component-card">
-        <img loading="lazy" src="ctr-closeup-date-picker-components.png" width="1042" height="490" alt="Date Picker Components">
+        <a href="ctr-closeup-date-picker-components.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-date-picker-components.png" width="1042" height="490" alt="Date Picker Components">
+        </a>
         <div class="component-card-label">Calendar Picker — single, range, and year selection variants</div>
       </div>
 
       <div class="component-card-wide">
-        <img loading="lazy" src="ctr-closeup-table-components-2.png" width="947" height="816" alt="Table Components 2">
+        <a href="ctr-closeup-table-components-2.png" target="_blank" rel="noopener noreferrer">
+          <img loading="lazy" src="ctr-closeup-table-components-2.png" width="947" height="816" alt="Table Components 2">
+        </a>
         <div class="component-card-label">Transaction · Product · Report List · Quantity/Balance · Receiver/Supplier · Dispense · Trader &amp; User Info Tables</div>
       </div>
 

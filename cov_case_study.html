@@ -22,7 +22,7 @@
 <style>
 /* HERO IMAGE */
 .case-hero-img {
-  max-width: 900px; margin: 3rem auto 0;
+  max-width: 900px; margin: 3rem auto 0; padding: 0 3rem;
   border-radius: 6px; overflow: hidden;
   border: 0.5px solid rgba(255,255,255,0.08);
 }
@@ -125,6 +125,7 @@
 .case-hero-img { animation: fadeUp 0.5s 0.1s ease both; }
 
 @media (max-width: 768px) {
+  .case-hero-img { padding: 0 1.5rem; }
   .overview-grid { grid-template-columns: 1fr; gap: 1rem; }
   .challenge-points { grid-template-columns: 1fr; }
   .proto-step { grid-template-columns: 1fr; }
@@ -165,7 +166,7 @@
       </div>
     </div>
   </div>
-  <div class="case-hero-img" style="max-width:900px;margin:3rem auto 0;padding:0 3rem;">
+  <div class="case-hero-img">
     <img src="cov-slide-1-opening-slide.png" width="3840" height="2160" alt="The Pre-approved Cooling Pilot">
   </div>
 </div>
